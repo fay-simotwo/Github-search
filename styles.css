@@ -1,11 +1,42 @@
 body{
-    background-color: rgb(10, 10, 45);
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/236x/79/56/93/79569399f9b1f282f045b65f731a9e8a.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-h1 {
-    text-align: center;
-    color: #767171;
-}
+nav{
+    color: #778ea5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #272829;
 
+}
+.logo a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.nav-links{
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    color: #778ea5;
+
+
+}
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
 .user-form {
     display: flex;
     justify-content: center;
@@ -28,4 +59,17 @@ h1 {
     width: 150px;
     height: 50px;
     border-radius: 10px;
+    
+}
+.profile {
+    text-align: center;
+    margin-top: 100px;
+}
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+}
+.profile h2 {
+    font-size: 24px;
+    margin-top: 20px;
 }
