@@ -23,3 +23,9 @@ h1 {
 #search::placeholder {
     color: #999;
 }
+#search-btn{
+    color: #767171;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
