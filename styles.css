@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(10, 10, 45);
+}
+h1 {
+    text-align: center;
+    color: #767171;
+}
+
+.user-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search::placeholder {
+    color: #999;
+}
