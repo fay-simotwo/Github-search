@@ -67,26 +67,26 @@ document.addEventListener("DOMContentLoaded", function() {
             resultContainer.textContent = "Avatar not found";
           }
   
-//           // Creating and appending the username element to the result container
-//           var usernameElement = document.createElement('p');
-//           usernameElement.textContent = "Username: " + username;
-//           resultContainer.appendChild(usernameElement);
+          // Creating and appending the username element to the result container
+          var usernameElement = document.createElement('p');
+          usernameElement.textContent = "Username: " + username;
+          resultContainer.appendChild(usernameElement);
   
-//           // Creating and appending the repository link element to the result container
-//           var repoLinkElement = document.createElement('p');
-//           var link = document.createElement('a');
-//           link.setAttribute('target', '_blank');
-//           link.setAttribute('href', repoLink);
-//           link.textContent = "Repository Link";
-//           repoLinkElement.appendChild(link);
-//           resultContainer.appendChild(repoLinkElement);
-//         })
-//         .catch((error) => {
-//           // Handling any errors that occurred during the fetching process
-//           console.log(error);
-//           resultContainer.textContent = "Error: " + error.message;
-//         });
-//     });
+          // Creating and appending the repository link element to the result container
+          var repoLinkElement = document.createElement('p');
+          var link = document.createElement('a');
+          link.setAttribute('target', '_blank');
+          link.setAttribute('href', repoLink);
+          link.textContent = "Repository Link";
+          repoLinkElement.appendChild(link);
+          resultContainer.appendChild(repoLinkElement);
+        })
+        .catch((error) => {
+          // Handling any errors that occurred during the fetching process
+          console.log(error);
+          resultContainer.textContent = "Error: " + error.message;
+        });
+    });
   
 //     // Adding an input event listener to the search input
 //     searchInput.addEventListener('input', function() {
