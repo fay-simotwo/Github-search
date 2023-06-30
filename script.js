@@ -93,27 +93,27 @@ document.addEventListener("DOMContentLoaded", function() {
       // Trimming the search input value and storing it in the "search" variable
       var search = searchInput.value.trim();
       
-//       // Clearing the suggestions container
-//       suggestionsContainer.innerHTML = "";
+      // Clearing the suggestions container
+      suggestionsContainer.innerHTML = "";
   
-//       // Checking if the search input has a length greater than 0
-//       if (search.length > 0) {
-//         // Fetching the user suggestions from the GitHub API based on the search input
-//         fetch("https://api.github.com/search/users?q=" + search, {
-//           headers: {
-//             Accept: "application/vnd.github.v3+json"
-//           }
-//         })
-//           .then((response) => {
-//             // Checking the response status for errors
-//             if (!response.ok) {
-//               throw new Error("Error fetching suggestions");
-//             }
-//             return response.json();
-//           })
-//           .then((data) => {
-//             // Logging the fetched user suggestions data
-//             console.log(data);
+      // Checking if the search input has a length greater than 0
+      if (search.length > 0) {
+        // Fetching the user suggestions from the GitHub API based on the search input
+        fetch("https://api.github.com/search/users?q=" + search, {
+          headers: {
+            Accept: "application/vnd.github.v3+json"
+          }
+        })
+          .then((response) => {
+            // Checking the response status for errors
+            if (!response.ok) {
+              throw new Error("Error fetching suggestions");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // Logging the fetched user suggestions data
+            console.log(data);
             
 //             // Extracting the users from the data
 //             var users = data.items;
