@@ -19,11 +19,18 @@
             <li><a href="search.html">Search</a></li>
         </ul>
        </nav>        
+    <div class="search-container">
         <form class="user-form">
-            <input type="text" id="search" placeholder="Enter a user's profile!">
+            <input type="text" id="search" placeholder="Search GitHub username">
             <button id="search-btn">Search</button>
         </form>
+        <div id="user-not-found" class="popup">
+            <p>User not found</p>
+        </div>
+    </div>
+        <div id="results" class="profile"></div>       
+        <div id="suggestions"></div>
 
-        
+        <script src="script.js"></script>
 </body>
 </html>
