@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Logging the fetched user suggestions data
             console.log(data);
             
-//             // Extracting the users from the data
-//             var users = data.items;
+            // Extracting the users from the data
+            var users = data.items;
             
 //             // Iterating over the users and creating suggestion elements
 //             users.forEach(function(user) {
