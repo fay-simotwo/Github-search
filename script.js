@@ -118,25 +118,25 @@ document.addEventListener("DOMContentLoaded", function() {
             // Extracting the users from the data
             var users = data.items;
             
-//             // Iterating over the users and creating suggestion elements
-//             users.forEach(function(user) {
-//               var suggestion = document.createElement('div');
-//               suggestion.textContent = user.login;
-//               suggestion.classList.add('suggestion');
-//               suggestion.addEventListener('click', function() {
-//                 // Setting the search input value to the clicked suggestion
-//                 searchInput.value = user.login;
-//                 // Triggering a form submit event
-//                 form.dispatchEvent(new Event('submit'));
-//               });
-//               suggestionsContainer.appendChild(suggestion);
-//             });
-//           })
-//           .catch((error) => {
-//             // Handling any errors that occurred during the fetching process
-//             console.log(error);
-//           });
-//       }
+            // Iterating over the users and creating suggestion elements
+            users.forEach(function(user) {
+              var suggestion = document.createElement('div');
+              suggestion.textContent = user.login;
+              suggestion.classList.add('suggestion');
+              suggestion.addEventListener('click', function() {
+                // Setting the search input value to the clicked suggestion
+                searchInput.value = user.login;
+                // Triggering a form submit event
+                form.dispatchEvent(new Event('submit'));
+              });
+              suggestionsContainer.appendChild(suggestion);
+            });
+          })
+          .catch((error) => {
+            // Handling any errors that occurred during the fetching process
+            console.log(error);
+          });
+      }
 //     });
 //   });
   
