@@ -88,10 +88,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
   
-//     // Adding an input event listener to the search input
-//     searchInput.addEventListener('input', function() {
-//       // Trimming the search input value and storing it in the "search" variable
-//       var search = searchInput.value.trim();
+    // Adding an input event listener to the search input
+    searchInput.addEventListener('input', function() {
+      // Trimming the search input value and storing it in the "search" variable
+      var search = searchInput.value.trim();
       
 //       // Clearing the suggestions container
 //       suggestionsContainer.innerHTML = "";
