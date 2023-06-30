@@ -51,21 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
           // Logging the fetched user data
           console.log(data);
   
-//           // Extracting the avatar URL, username, and repository link from the data
-//           var avatarUrl = data.avatar_url;
-//           var username = data.login;
-//           var repoLink = data.html_url;
+          // Extracting the avatar URL, username, and repository link from the data
+          var avatarUrl = data.avatar_url;
+          var username = data.login;
+          var repoLink = data.html_url;
   
-//           // Creating and appending the avatar image to the result container
-//           if (avatarUrl) {
-//             var avatarImg = document.createElement('img');
-//             avatarImg.setAttribute('src', avatarUrl);
-//             avatarImg.setAttribute('alt', 'Avatar');
-//             avatarImg.classList.add('avatar-img');
-//             resultContainer.appendChild(avatarImg);
-//           } else {
-//             resultContainer.textContent = "Avatar not found";
-//           }
+          // Creating and appending the avatar image to the result container
+          if (avatarUrl) {
+            var avatarImg = document.createElement('img');
+            avatarImg.setAttribute('src', avatarUrl);
+            avatarImg.setAttribute('alt', 'Avatar');
+            avatarImg.classList.add('avatar-img');
+            resultContainer.appendChild(avatarImg);
+          } else {
+            resultContainer.textContent = "Avatar not found";
+          }
   
 //           // Creating and appending the username element to the result container
 //           var usernameElement = document.createElement('p');
